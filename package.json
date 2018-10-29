@@ -1,0 +1,9 @@
+{
+  "name": "products-in-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [ "npm" ],
+  "author": "",
+  "license": "MIT"
+}
