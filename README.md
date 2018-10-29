@@ -1,4 +1,6 @@
 #### Usage
-        const CartProducts = new CartProducts();
-        CartProducts.addProduct('id','pageType');
-        CartProducts.deleteProduct('id');
+        const Cart = new CartProducts();
+        Cart.addProduct('id','pageType');
+        Cart.deleteProduct('id');
+        Cart.getProduct('id');
+

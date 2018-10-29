@@ -28,12 +28,21 @@
 
         deleteProduct(id) {
             let productsInCart = JSON.parse(this.storage.getItem('productsInCart'));
+
+            // decrease only quantity property, doesn't apply for pip and conf
             productsInCart[id].quantity--;
 
             if(productsInCart[id].quantity <= 0) {
                 delete productsInCart[id];
             }
             this.storage.setItem('productsInCart',JSON.stringify(productsInCart));
+        }
+
+        getProduct(id) {
+            let productsInCart = JSON.parse(this.storage.getItem('productsInCart'));
+            if(productsInCart.hasOwnProperty(id)) {
+                return productsInCart[id];
+            }
         }
     }
 
