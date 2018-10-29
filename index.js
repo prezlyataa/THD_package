@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    const products_in_cart = (function() {
+    const products_in_cart = (function(a,b) {
         return function () {
-            return 'WORKING!'
+            return a + b;
         };
     })();
 
