@@ -10,7 +10,9 @@
             if(!this.storage.hasOwnProperty('productsInCart')) {
                 this.storage.setItem('productsInCart', JSON.stringify({}));
             }
+
             let productsInCart = JSON.parse(this.storage.getItem('productsInCart'));
+
             if(!productsInCart.hasOwnProperty(id)) {
                 productsInCart[id] = { pip: 0, conf: 0 };
             } else {
@@ -21,7 +23,22 @@
                     productsInCart[id].conf++;
                 }
             }
+
+            productsInCart[id].quantity = productsInCart[id].pip + productsInCart[id].conf;
+
             this.storage.setItem('productsInCart', JSON.stringify(productsInCart));
+        }
+
+        deleteProduct(id) {
+            let productsInCart = JSON.parse(this.storage.getItem('productsInCart'));
+
+            productsInCart[id].quantity--;
+
+            if(productsInCart[id].quantity === 0) {
+                delete productsInCart[id];
+            }
+
+            this.storage.setItem('productsInCart',JSON.stringify(productsInCart));
         }
     }
 
