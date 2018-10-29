@@ -1,12 +1,12 @@
 (function() {
     'use strict';
 
-    const products_in_cart = (function(a,b) {
-        return function () {
+    const productsInCart = (function() {
+        return function (a,b) {
             return a + b;
         };
     })();
 
-    module.exports = products_in_cart;
+    module.exports = productsInCart;
 })(this);
 
