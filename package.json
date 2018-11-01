@@ -6,12 +6,19 @@
   "scripts": {
     "test": "jest --watch"
   },
+  "author": {
+    "name": "Yurii Prezliata",
+    "email": "prezliata.yuriy@gmail.com"
+  },
   "keywords": [
     "npm"
   ],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prezlyataa/products-in-cart"
   }
 }
