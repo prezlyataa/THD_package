@@ -20,7 +20,7 @@
 ##### Results
 Result will be stored at localStorage inside property `productsInCart`
 ```ruby
-localStorage {productsInCart: "{"productId":{"pageType":count,"pageType":count,"quantity":count}}", length: 1}
+    localStorage {productsInCart: "{"productId":{"pageType":count,"pageType":count,"quantity":count}}", length: 1}
 ```
 
 ### Run test
