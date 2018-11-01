@@ -6,24 +6,24 @@
 ##### Initialization
 #
 ```ruby
-    const CartProducts = require('products-in-cart');
-    const Cart = new CartProducts();
+const CartProducts = require('products-in-cart');
+const Cart = new CartProducts();
 ```
 ##### Methods
 #
 ```ruby
-    Cart.addProduct('productId','pageType');
-    Cart.deleteProduct('productId');
-    Cart.getProduct('productId');
+Cart.addProduct('productId','pageType');
+Cart.deleteProduct('productId');
+Cart.getProduct('productId');
 ```
 
 ##### Results
 Result will be stored at localStorage inside property `productsInCart`
 ```ruby
-    localStorage {productsInCart: "{"productId":{"pageType":count,"pageType":count,"quantity":count}}", length: 1}
+localStorage {productsInCart: "{"productId":{"pageType":count,"pageType":count,"quantity":count}}", length: 1}
 ```
 
 ### Run test
 ```ruby
-    npm run test
+npm run test
 ```
